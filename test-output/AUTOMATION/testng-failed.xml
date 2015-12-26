@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AUTOMATION]" parallel="classes">
+  <parameter name="browser" value="Firefox"/>
+  <test name="fftest(failed)" parallel="classes" preserve-order="true">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="commonLibrary.SampleTestNG">
+        <methods>
+          <include name="AtTest"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- commonLibrary.SampleTestNG -->
+    </classes>
+  </test> <!-- fftest(failed) -->
+</suite> <!-- Failed suite [AUTOMATION] -->
